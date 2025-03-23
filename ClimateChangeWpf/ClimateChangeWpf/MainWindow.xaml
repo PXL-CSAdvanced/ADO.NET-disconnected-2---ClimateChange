@@ -1,0 +1,115 @@
+﻿<Window x:Class="ClimateChangeWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClimateChangeWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#abe1fb">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Image 
+         Grid.Column="1"
+         Margin="0 20 0 0 "
+         Source="/images/ClimateCrisis.jpg" />
+
+        <TabControl Grid.Row="1" Grid.ColumnSpan="2">
+            <TabItem Header="Overzicht Temperatuur">
+                <DataGrid Name="TempChangeDataGrid" Margin="20">
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Overzicht Landen">
+                <Grid Margin="20">
+                    <DataGrid Name="CountriesDataGrid">
+
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Detail">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Viewbox Margin="5">
+                        <ComboBox 
+                             Width="300"
+                               Name="CountriesComboBox"
+                               VerticalContentAlignment="Center" SelectionChanged="CountriesComboBox_SelectionChanged">
+                        </ComboBox>
+                    </Viewbox>
+
+                    <ListBox Grid.Column="1" Grid.Row="0" Margin="20" 
+                          Grid.RowSpan="5"
+                          Name="ListBoxTempChange">
+
+                    </ListBox>
+
+                    <Image Name="CountryFlagImage"
+                        Margin="5" Grid.Row="1"></Image>
+                    <Viewbox Margin="20 10" Grid.Row="2"
+                          VerticalAlignment="Center"
+                          HorizontalAlignment="Left">
+                        <TextBlock 
+                            Name="CountryNameTextBlock"
+                            >name</TextBlock>
+
+                    </Viewbox>
+                    <Viewbox Margin="20 10" Grid.Row="3"
+                          VerticalAlignment="Center"
+                          HorizontalAlignment="Left">
+                        <TextBlock 
+                            Name="CountryRegionTextBlock"
+                            >region</TextBlock>
+
+                    </Viewbox>
+                    <Viewbox Margin="20 10" Grid.Row="4"
+                          VerticalAlignment="Center"
+                          HorizontalAlignment="Left">
+                        <TextBlock 
+                            Name="CountrySubRegionTextBlock"
+                            >region</TextBlock>
+
+                    </Viewbox>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Slechtste Jaren na 2000">
+                <Grid Margin="20">
+                    <ListBox Name="WorstYearsListBox">
+
+                    </ListBox>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+        <!--<Button Margin="20" Click="Button_Click"
+             Grid.Column="1" FontSize="20"
+             >World</Button>-->
+
+        <!--<ListBox>
+         <ListBoxItem Background="GreenYellow">test</ListBoxItem>
+         <ListBoxItem Background="Yellow">test</ListBoxItem>
+         <ListBoxItem Background="Orange">test</ListBoxItem>
+         <ListBoxItem Background="OrangeRed">test</ListBoxItem>
+         <ListBoxItem Background="Red">test</ListBoxItem>
+         <ListBoxItem Background="Purple">test</ListBoxItem>
+     </ListBox>-->
+    </Grid>
+</Window>

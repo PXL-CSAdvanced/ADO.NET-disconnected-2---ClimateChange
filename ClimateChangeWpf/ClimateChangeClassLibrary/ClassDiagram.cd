@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="ClimateChangeClassLibrary.Entities.Country">
+    <Position X="10.25" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ICAAAAAAgAAAAAAEAAAAAAAAAAAAAAAAAAAABACAAAA=</HashCode>
+      <FileName>Entities\Country.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClimateChangeClassLibrary.Entities.TempChange">
+    <Position X="7.25" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ICACAAAABABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\TempChange.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClimateChangeClassLibrary.DataAccess.DataProcessor">
+    <Position X="0.75" Y="0.75" Width="5.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAIAAYAAAAAAAAAAAhABAACAAEAAAAAEABwQAAA=</HashCode>
+      <FileName>DataAccess\DataProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
