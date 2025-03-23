@@ -1,0 +1,825 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\ClimateCrisis.jpg" />
+    <None Remove="images\flags\Flag_of_Albania.png" />
+    <None Remove="images\flags\Flag_of_Algeria.png" />
+    <None Remove="images\flags\Flag_of_Andorra.png" />
+    <None Remove="images\flags\Flag_of_Angola.png" />
+    <None Remove="images\flags\Flag_of_Antigua_and_Barbuda.png" />
+    <None Remove="images\flags\Flag_of_Argentina.png" />
+    <None Remove="images\flags\Flag_of_Armenia.png" />
+    <None Remove="images\flags\Flag_of_Artsakh.png" />
+    <None Remove="images\flags\Flag_of_Australia_%28converted%29.png" />
+    <None Remove="images\flags\Flag_of_Austria.png" />
+    <None Remove="images\flags\Flag_of_Azerbaijan.png" />
+    <None Remove="images\flags\Flag_of_Bahrain.png" />
+    <None Remove="images\flags\Flag_of_Bangladesh.png" />
+    <None Remove="images\flags\Flag_of_Barbados.png" />
+    <None Remove="images\flags\Flag_of_Belarus.png" />
+    <None Remove="images\flags\Flag_of_Belgium_%28civil%29.png" />
+    <None Remove="images\flags\Flag_of_Belize.png" />
+    <None Remove="images\flags\Flag_of_Benin.png" />
+    <None Remove="images\flags\Flag_of_Bhutan.png" />
+    <None Remove="images\flags\Flag_of_Bolivia.png" />
+    <None Remove="images\flags\Flag_of_Bosnia_and_Herzegovina.png" />
+    <None Remove="images\flags\Flag_of_Botswana.png" />
+    <None Remove="images\flags\Flag_of_Brazil.png" />
+    <None Remove="images\flags\Flag_of_Brunei.png" />
+    <None Remove="images\flags\Flag_of_Bulgaria.png" />
+    <None Remove="images\flags\Flag_of_Burkina_Faso.png" />
+    <None Remove="images\flags\Flag_of_Burundi.png" />
+    <None Remove="images\flags\Flag_of_Cambodia.png" />
+    <None Remove="images\flags\Flag_of_Cameroon.png" />
+    <None Remove="images\flags\Flag_of_Canada.png" />
+    <None Remove="images\flags\Flag_of_Cape_Verde.png" />
+    <None Remove="images\flags\Flag_of_Chad.png" />
+    <None Remove="images\flags\Flag_of_Chile.png" />
+    <None Remove="images\flags\Flag_of_Colombia.png" />
+    <None Remove="images\flags\Flag_of_Costa_Rica.png" />
+    <None Remove="images\flags\Flag_of_Croatia.png" />
+    <None Remove="images\flags\Flag_of_Cuba.png" />
+    <None Remove="images\flags\Flag_of_Cyprus.png" />
+    <None Remove="images\flags\Flag_of_Denmark.png" />
+    <None Remove="images\flags\Flag_of_Djibouti.png" />
+    <None Remove="images\flags\Flag_of_Dominica.png" />
+    <None Remove="images\flags\Flag_of_East_Timor.png" />
+    <None Remove="images\flags\Flag_of_Ecuador.png" />
+    <None Remove="images\flags\Flag_of_Egypt.png" />
+    <None Remove="images\flags\Flag_of_El_Salvador.png" />
+    <None Remove="images\flags\Flag_of_Equatorial_Guinea.png" />
+    <None Remove="images\flags\Flag_of_Eritrea.png" />
+    <None Remove="images\flags\Flag_of_Estonia.png" />
+    <None Remove="images\flags\Flag_of_Ethiopia.png" />
+    <None Remove="images\flags\Flag_of_Fiji.png" />
+    <None Remove="images\flags\Flag_of_Finland.png" />
+    <None Remove="images\flags\Flag_of_France.png" />
+    <None Remove="images\flags\Flag_of_Gabon.png" />
+    <None Remove="images\flags\Flag_of_Georgia.png" />
+    <None Remove="images\flags\Flag_of_Germany.png" />
+    <None Remove="images\flags\Flag_of_Ghana.png" />
+    <None Remove="images\flags\Flag_of_Greece.png" />
+    <None Remove="images\flags\Flag_of_Grenada.png" />
+    <None Remove="images\flags\Flag_of_Guatemala.png" />
+    <None Remove="images\flags\Flag_of_Guinea-Bissau.png" />
+    <None Remove="images\flags\Flag_of_Guinea.png" />
+    <None Remove="images\flags\Flag_of_Guyana.png" />
+    <None Remove="images\flags\Flag_of_Haiti.png" />
+    <None Remove="images\flags\Flag_of_Honduras.png" />
+    <None Remove="images\flags\Flag_of_Hungary.png" />
+    <None Remove="images\flags\Flag_of_Iceland.png" />
+    <None Remove="images\flags\Flag_of_India.png" />
+    <None Remove="images\flags\Flag_of_Indonesia.png" />
+    <None Remove="images\flags\Flag_of_Iran.png" />
+    <None Remove="images\flags\Flag_of_Iraq.png" />
+    <None Remove="images\flags\Flag_of_Ireland.png" />
+    <None Remove="images\flags\Flag_of_Israel.png" />
+    <None Remove="images\flags\Flag_of_Italy.png" />
+    <None Remove="images\flags\Flag_of_Jamaica.png" />
+    <None Remove="images\flags\Flag_of_Japan.png" />
+    <None Remove="images\flags\Flag_of_Jordan.png" />
+    <None Remove="images\flags\Flag_of_Kazakhstan.png" />
+    <None Remove="images\flags\Flag_of_Kenya.png" />
+    <None Remove="images\flags\Flag_of_Kiribati.png" />
+    <None Remove="images\flags\Flag_of_Kosovo.png" />
+    <None Remove="images\flags\Flag_of_Kuwait.png" />
+    <None Remove="images\flags\Flag_of_Kyrgyzstan.png" />
+    <None Remove="images\flags\Flag_of_Laos.png" />
+    <None Remove="images\flags\Flag_of_Latvia.png" />
+    <None Remove="images\flags\Flag_of_Lebanon.png" />
+    <None Remove="images\flags\Flag_of_Lesotho.png" />
+    <None Remove="images\flags\Flag_of_Liberia.png" />
+    <None Remove="images\flags\Flag_of_Libya.png" />
+    <None Remove="images\flags\Flag_of_Liechtenstein.png" />
+    <None Remove="images\flags\Flag_of_Lithuania.png" />
+    <None Remove="images\flags\Flag_of_Luxembourg.png" />
+    <None Remove="images\flags\Flag_of_Madagascar.png" />
+    <None Remove="images\flags\Flag_of_Malawi.png" />
+    <None Remove="images\flags\Flag_of_Malaysia.png" />
+    <None Remove="images\flags\Flag_of_Maldives.png" />
+    <None Remove="images\flags\Flag_of_Mali.png" />
+    <None Remove="images\flags\Flag_of_Malta.png" />
+    <None Remove="images\flags\Flag_of_Mauritania.png" />
+    <None Remove="images\flags\Flag_of_Mauritius.png" />
+    <None Remove="images\flags\Flag_of_Mexico.png" />
+    <None Remove="images\flags\Flag_of_Moldova.png" />
+    <None Remove="images\flags\Flag_of_Monaco.png" />
+    <None Remove="images\flags\Flag_of_Mongolia.png" />
+    <None Remove="images\flags\Flag_of_Montenegro.png" />
+    <None Remove="images\flags\Flag_of_Morocco.png" />
+    <None Remove="images\flags\Flag_of_Mozambique.png" />
+    <None Remove="images\flags\Flag_of_Myanmar.png" />
+    <None Remove="images\flags\Flag_of_Namibia.png" />
+    <None Remove="images\flags\Flag_of_Nauru.png" />
+    <None Remove="images\flags\Flag_of_Nepal.png" />
+    <None Remove="images\flags\Flag_of_New_Zealand.png" />
+    <None Remove="images\flags\Flag_of_Nicaragua.png" />
+    <None Remove="images\flags\Flag_of_Niger.png" />
+    <None Remove="images\flags\Flag_of_Nigeria.png" />
+    <None Remove="images\flags\Flag_of_Niue.png" />
+    <None Remove="images\flags\Flag_of_North_Korea.png" />
+    <None Remove="images\flags\Flag_of_Norway.png" />
+    <None Remove="images\flags\Flag_of_Oman.png" />
+    <None Remove="images\flags\Flag_of_Pakistan.png" />
+    <None Remove="images\flags\Flag_of_Palau.png" />
+    <None Remove="images\flags\Flag_of_Palestine.png" />
+    <None Remove="images\flags\Flag_of_Panama.png" />
+    <None Remove="images\flags\Flag_of_Papua_New_Guinea.png" />
+    <None Remove="images\flags\Flag_of_Paraguay.png" />
+    <None Remove="images\flags\Flag_of_Peru.png" />
+    <None Remove="images\flags\Flag_of_Poland.png" />
+    <None Remove="images\flags\Flag_of_Portugal.png" />
+    <None Remove="images\flags\Flag_of_Qatar.png" />
+    <None Remove="images\flags\Flag_of_Romania.png" />
+    <None Remove="images\flags\Flag_of_Russia.png" />
+    <None Remove="images\flags\Flag_of_Rwanda.png" />
+    <None Remove="images\flags\Flag_of_Saint_Kitts_and_Nevis.png" />
+    <None Remove="images\flags\Flag_of_Saint_Lucia.png" />
+    <None Remove="images\flags\Flag_of_Saint_Vincent_and_the_Grenadines.png" />
+    <None Remove="images\flags\Flag_of_Samoa.png" />
+    <None Remove="images\flags\Flag_of_San_Marino.png" />
+    <None Remove="images\flags\Flag_of_Sao_Tome_and_Principe.png" />
+    <None Remove="images\flags\Flag_of_Saudi_Arabia.png" />
+    <None Remove="images\flags\Flag_of_Senegal.png" />
+    <None Remove="images\flags\Flag_of_Serbia.png" />
+    <None Remove="images\flags\Flag_of_Seychelles.png" />
+    <None Remove="images\flags\Flag_of_Sierra_Leone.png" />
+    <None Remove="images\flags\Flag_of_Singapore.png" />
+    <None Remove="images\flags\Flag_of_Slovakia.png" />
+    <None Remove="images\flags\Flag_of_Slovenia.png" />
+    <None Remove="images\flags\Flag_of_Somalia.png" />
+    <None Remove="images\flags\Flag_of_Somaliland.png" />
+    <None Remove="images\flags\Flag_of_South_Africa.png" />
+    <None Remove="images\flags\Flag_of_South_Korea.png" />
+    <None Remove="images\flags\Flag_of_South_Sudan.png" />
+    <None Remove="images\flags\Flag_of_Spain.png" />
+    <None Remove="images\flags\Flag_of_Sri_Lanka.png" />
+    <None Remove="images\flags\Flag_of_Sudan.png" />
+    <None Remove="images\flags\Flag_of_Suriname.png" />
+    <None Remove="images\flags\Flag_of_Sweden.png" />
+    <None Remove="images\flags\Flag_of_Switzerland_%28Pantone%29.png" />
+    <None Remove="images\flags\Flag_of_Syria.png" />
+    <None Remove="images\flags\Flag_of_Tajikistan.png" />
+    <None Remove="images\flags\Flag_of_Tanzania.png" />
+    <None Remove="images\flags\Flag_of_Thailand.png" />
+    <None Remove="images\flags\Flag_of_the_Bahamas.png" />
+    <None Remove="images\flags\Flag_of_the_Central_African_Republic.png" />
+    <None Remove="images\flags\Flag_of_the_Comoros.png" />
+    <None Remove="images\flags\Flag_of_the_Cook_Islands.png" />
+    <None Remove="images\flags\Flag_of_the_Czech_Republic.png" />
+    <None Remove="images\flags\Flag_of_the_Democratic_Republic_of_the_Congo.png" />
+    <None Remove="images\flags\Flag_of_the_Dominican_Republic.png" />
+    <None Remove="images\flags\Flag_of_the_Federated_States_of_Micronesia.png" />
+    <None Remove="images\flags\Flag_of_The_Gambia.png" />
+    <None Remove="images\flags\Flag_of_the_Marshall_Islands.png" />
+    <None Remove="images\flags\Flag_of_the_Netherlands.png" />
+    <None Remove="images\flags\Flag_of_the_People%27s_Republic_of_China.png" />
+    <None Remove="images\flags\Flag_of_the_Philippines.png" />
+    <None Remove="images\flags\Flag_of_the_Republic_of_China.png" />
+    <None Remove="images\flags\Flag_of_the_Republic_of_the_Congo.png" />
+    <None Remove="images\flags\Flag_of_the_Sahrawi_Arab_Democratic_Republic.png" />
+    <None Remove="images\flags\Flag_of_the_Solomon_Islands.png" />
+    <None Remove="images\flags\Flag_of_the_Turkish_Republic_of_Northern_Cyprus.png" />
+    <None Remove="images\flags\Flag_of_the_United_Arab_Emirates.png" />
+    <None Remove="images\flags\Flag_of_the_United_Kingdom.png" />
+    <None Remove="images\flags\Flag_of_the_United_States.png" />
+    <None Remove="images\flags\Flag_of_the_Vatican_City.png" />
+    <None Remove="images\flags\Flag_of_Togo.png" />
+    <None Remove="images\flags\Flag_of_Tonga.png" />
+    <None Remove="images\flags\Flag_of_Transnistria_%28state%29.png" />
+    <None Remove="images\flags\Flag_of_Trinidad_and_Tobago.png" />
+    <None Remove="images\flags\Flag_of_Tunisia.png" />
+    <None Remove="images\flags\Flag_of_Turkey.png" />
+    <None Remove="images\flags\Flag_of_Turkmenistan.png" />
+    <None Remove="images\flags\Flag_of_Tuvalu.png" />
+    <None Remove="images\flags\Flag_of_Uganda.png" />
+    <None Remove="images\flags\Flag_of_Ukraine.png" />
+    <None Remove="images\flags\Flag_of_Uruguay.png" />
+    <None Remove="images\flags\Flag_of_Uzbekistan.png" />
+    <None Remove="images\flags\Flag_of_Vanuatu.png" />
+    <None Remove="images\flags\Flag_of_Venezuela.png" />
+    <None Remove="images\flags\Flag_of_Vietnam.png" />
+    <None Remove="images\flags\Flag_of_Yemen.png" />
+    <None Remove="images\flags\Flag_of_Zambia.png" />
+    <None Remove="images\flags\Flag_of_Zimbabwe.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="images\ClimateCrisis.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Albania.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Algeria.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Andorra.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Angola.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Antigua_and_Barbuda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Argentina.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Armenia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Artsakh.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Australia_(converted).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Austria.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Azerbaijan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Bahrain.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Bangladesh.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Barbados.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Belarus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Belgium_(civil).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Belize.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Benin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Bhutan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Bolivia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Bosnia_and_Herzegovina.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Botswana.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Brazil.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Brunei.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Bulgaria.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Burkina_Faso.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Burundi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Cambodia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Cameroon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Canada.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Cape_Verde.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Chad.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Chile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Colombia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Costa_Rica.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Croatia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Cuba.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Cyprus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Denmark.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Djibouti.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Dominica.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_East_Timor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Ecuador.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Egypt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_El_Salvador.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Equatorial_Guinea.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Eritrea.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Estonia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Ethiopia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Fiji.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Finland.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_France.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Gabon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Georgia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Germany.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Ghana.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Greece.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Grenada.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Guatemala.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Guinea-Bissau.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Guinea.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Guyana.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Haiti.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Honduras.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Hungary.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Iceland.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_India.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Indonesia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Iran.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Iraq.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Ireland.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Israel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Italy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Jamaica.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Japan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Jordan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Kazakhstan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Kenya.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Kiribati.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Kosovo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Kuwait.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Kyrgyzstan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Laos.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Latvia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Lebanon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Lesotho.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Liberia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Libya.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Liechtenstein.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Lithuania.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Luxembourg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Madagascar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Malawi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Malaysia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Maldives.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Mali.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Malta.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Mauritania.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Mauritius.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Mexico.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Moldova.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Monaco.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Mongolia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Montenegro.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Morocco.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Mozambique.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Myanmar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Namibia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Nauru.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Nepal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_New_Zealand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Nicaragua.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Niger.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Nigeria.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Niue.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_North_Korea.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Norway.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Oman.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Pakistan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Palau.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Palestine.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Panama.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Papua_New_Guinea.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Paraguay.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Peru.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Poland.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Portugal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Qatar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Romania.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Russia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Rwanda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Saint_Kitts_and_Nevis.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Saint_Lucia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Saint_Vincent_and_the_Grenadines.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Samoa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_San_Marino.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Sao_Tome_and_Principe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Saudi_Arabia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Senegal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Serbia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Seychelles.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Sierra_Leone.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Singapore.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Slovakia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Slovenia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Somalia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Somaliland.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_South_Africa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_South_Korea.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_South_Sudan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Spain.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Sri_Lanka.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Sudan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Suriname.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Sweden.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Switzerland_(Pantone).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Syria.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Tajikistan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Tanzania.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Thailand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_Bahamas.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_Central_African_Republic.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_Comoros.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_Cook_Islands.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_Czech_Republic.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_Democratic_Republic_of_the_Congo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_Dominican_Republic.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_Federated_States_of_Micronesia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_The_Gambia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_Marshall_Islands.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_Netherlands.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_People's_Republic_of_China.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_Philippines.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_Republic_of_China.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_Republic_of_the_Congo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_Sahrawi_Arab_Democratic_Republic.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_Solomon_Islands.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_Turkish_Republic_of_Northern_Cyprus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_United_Arab_Emirates.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_United_Kingdom.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_United_States.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_the_Vatican_City.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Togo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Tonga.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Transnistria_(state).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Trinidad_and_Tobago.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Tunisia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Turkey.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Turkmenistan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Tuvalu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Uganda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Ukraine.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Uruguay.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Uzbekistan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Vanuatu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Venezuela.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Vietnam.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Yemen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Zambia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flags\Flag_of_Zimbabwe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClimateChangeClassLibrary\ClimateChangeClassLibrary.csproj" />
+  </ItemGroup>
+
+</Project>
