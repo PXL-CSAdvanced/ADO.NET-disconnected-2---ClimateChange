@@ -60,6 +60,12 @@ Er zijn twee datasets voorzien, één met informatie van de landen en één met de j
 
 <img src="images/2.png" style="width:300px">
 
+*"The FAOSTAT Temperature change on land domain disseminates statistics of mean surface temperature change by country, with annual updates. The current dissemination covers the period 1961–2023. Statistics are available for monthly, seasonal and annual mean temperature anomalies, i.e., temperature change with respect to a baseline climatology, corresponding to the period 1951–1980. The standard deviation of the temperature change of the baseline methodology is also available. Data are based on the publicly available GISTEMP data, the Global Surface Temperature Change data distributed by the National Aeronautics and Space Administration Goddard Institute for Space Studies (NASA-GISS)."*</br>
+--*https://www.fao.org/faostat/en/#data/ET/metadata*
+
+Zie onderaan voor verduidelijking voor Chang waarde in TempChange.
+
+
 #### Data Processor
 <img src="images/1.png" style="width:650px">
 
@@ -89,3 +95,19 @@ Er zijn twee datasets voorzien, één met informatie van de landen en één met de j
 	4. Temp < 2 : OrangeRed
 	5. Temp < 2.5 : Red
 	6. Temp < 3 : Purple
+8. Als gebruiker kan ik via het Export tabblad mijn ClimateChangeDataSet exporteren naar XML door op de Export-knop te klikken.
+
+# 1.4 TempChange uitgelegd
+De tempchange waarde stelt de gemiddelde jaarlijkse temperatuurafwijking voor van een land in een specifiek jaar, vergeleken met een baseline-klimaatperiode van 1951–1980. Met andere woorden:
+	
+	TempChange = Gemeten_gemiddelde_temperatuur_in_jaar_X – Gemiddelde_temperatuur_van_1951–1980
+
+Wat zegt deze waarde?
+Een positieve waarde (bijvoorbeeld +1.5 °C) betekent dat het betreffende land in dat jaar gemiddeld 1.5 °C warmer was dan het gemiddelde in de baseline-periode.
+
+Een negatieve waarde (bijvoorbeeld -0.3 °C) betekent dat het land dat jaar gemiddeld 0.3 °C kouder was dan het baseline-gemiddelde.
+
+Waarom is dit belangrijk?
+Deze waarde geeft inzicht in hoe sterk een land opwarmt of afkoelt ten opzichte van het klimaat uit het midden van de 20e eeuw. Het is een veelgebruikte manier in klimaatwetenschap om de impact van klimaatverandering zichtbaar te maken.
+
+*De data in deze opdracht is gebaseerd op NASA-GISS GISTEMP metingen en toont per land en per jaar hoeveel graden de temperatuur afwijkt van het gemiddelde in de periode 1951–1980.*
