@@ -34,16 +34,21 @@ Er zijn twee datasets voorzien, één met informatie van de landen en één met de j
 #### MainWindow:
 *(Overzicht van landen en temperatuur tabbladen)*
 
-<img src="images/4.png" style="width:450px"> <img src="images/5.png" style="width:450px">
+<img src="images/10.png">
+<img src="images/11.png">
 
 #### Detail Tab:
 
-<img src="images/6.png">
+<img src="images/13.png">
 
 
 #### Slechtste jaren post 2000 Tab:
 
-<img src="images/7.png">
+<img src="images/12.png">
+
+#### Export:
+
+<img src="images/14.png">
 
 # 1.3 Applicatie functionaliteit
 
