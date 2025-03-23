@@ -97,6 +97,19 @@
                     </ListBox>
                 </Grid>
             </TabItem>
+            <TabItem Header="Export">
+                <StackPanel>
+                    <TextBlock TextWrapping="Wrap" FontStyle="Italic" Margin="20">
+                        The FAOSTAT Temperature change on land domain disseminates statistics of mean surface temperature change by country, with annual updates. The current dissemination covers the period 1961–2023. Statistics are available for monthly, seasonal and annual mean temperature anomalies, i.e., temperature change with respect to a baseline climatology, corresponding to the period 1951–1980. The standard deviation of the temperature change of the baseline methodology is also available. Data are based on the publicly available GISTEMP data, the Global Surface Temperature Change data distributed by the National Aeronautics and Space Administration Goddard Institute for Space Studies (NASA-GISS).
+                    </TextBlock>
+                    <TextBlock Margin="20">
+                        https://www.fao.org/faostat/en/#data/ET/metadata
+                    </TextBlock>
+                    <Button Name="ExportXMLButton"
+                            Margin="10"
+                            FontSize="20">EXPORTEER NAAR XML</Button>
+                </StackPanel>
+            </TabItem>
         </TabControl>
 
         <!--<Button Margin="20" Click="Button_Click"
