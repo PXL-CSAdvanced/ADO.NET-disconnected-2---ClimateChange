@@ -50,9 +50,9 @@ Er zijn twee datasets voorzien, één met informatie van de landen en één met de j
 
 <img src="images/14.png">
 
-# 1.3 Applicatie functionaliteit
+## 1.3 Applicatie functionaliteit
 
-# 1.3.1 Class Library
+### 1.3.1 Class Library
 
 #### Country & TempChange
 
@@ -85,7 +85,7 @@ Zie onderaan voor verduidelijking voor Chang waarde in TempChange.
 6. Voorzie een methode `GetTempChangesByCountryName(Country country)` die een List teruggeeft van TempChanges van het gegeven land in stijgende volgorde op basis van het jaar.
 7. Uitdaging: Probeer een methode te schrijven `AddRowsToDataTableFromFile(DataTable dt, string filename)` die je voor beide DataTables kan gebruiken om alle DataRows toe te voegen aan een gegeven DataTable.
 
-## 1.3.2 MainWindow
+### 1.3.2 MainWindow
 
 1. Als gebruiker kan ik een overzicht zien van alle landen in het tabpanel “Overzicht Landen”.
 2. Als gebruiker kan ik een overzicht zien van alle temperatuursveranderingenin het tabpanel “Overzicht Temperatuur”.
@@ -102,7 +102,7 @@ Zie onderaan voor verduidelijking voor Chang waarde in TempChange.
 	6. Temp < 3 : Purple
 8. Als gebruiker kan ik via het Export tabblad mijn ClimateChangeDataSet exporteren naar XML door op de Export-knop te klikken.
 
-# 1.4 TempChange uitgelegd
+## 1.4 TempChange uitgelegd
 De tempchange waarde stelt de gemiddelde jaarlijkse temperatuurafwijking voor van een land in een specifiek jaar, vergeleken met een baseline-klimaatperiode van 1951–1980. Met andere woorden:
 	
 	TempChange = Gemeten_gemiddelde_temperatuur_in_jaar_X – Gemiddelde_temperatuur_van_1951–1980
