@@ -105,7 +105,7 @@
                     <TextBlock Margin="20">
                         https://www.fao.org/faostat/en/#data/ET/metadata
                     </TextBlock>
-                    <Button Name="ExportXMLButton"
+                    <Button Name="ExportXMLButton" Click="ExportXMLButton_Click"
                             Margin="10"
                             FontSize="20">EXPORTEER NAAR XML</Button>
                 </StackPanel>

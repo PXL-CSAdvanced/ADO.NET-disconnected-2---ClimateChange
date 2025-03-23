@@ -115,4 +115,9 @@ public partial class MainWindow : Window
         }
         return item;
     }
+
+    private void ExportXMLButton_Click(object sender, RoutedEventArgs e)
+    {
+        DataProcessor.ClimateChangeDataSet.WriteXml("climateChange.xml");
+    }
 }

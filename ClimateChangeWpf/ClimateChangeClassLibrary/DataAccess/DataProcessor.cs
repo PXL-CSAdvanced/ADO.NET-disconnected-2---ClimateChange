@@ -17,6 +17,7 @@ namespace ClimateChangeClassLibrary.DataAccess
         private const string CountriesFilePath = "resources/Country_codes_and_flags.csv";
 
         private static DataSet _climateChangeDataSet;
+        public static DataSet ClimateChangeDataSet { get { return _climateChangeDataSet.Copy(); } }
 
         #region AanmakenDataSet
         static DataProcessor()
